@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model</title>
+    <style>
+        .box
+        {
+            /* padding: 10px; 10px each side */
+            padding: 10px 20px 10px 20px; /*Top right bottom left*/
+            /* margin: 10px; */
+            margin: 10px 20px 10px 20px; /*Top right bottom left*/
+            /* width: 50%;
+            margin: 10px auto; */
+            background-color: blue;
+        }
+        .block
+        {
+            display: block;
+        }
+        .inline_block
+        {
+            display: inline-block;
+            height: 100px;
+            width: 100px;
+        }
+        .inline
+        {
+            height: 100px;
+            width: 100px;
+            display: inline;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box block">Block</div>
+    <div class="box block">Block</div>
+    <div class="box block">Block</div>
+    <div class="box inline_block">inline-Block</div>
+    <div class="box inline_block">inline-Block</div>
+    <div class="box inline_block">inline-Block</div>
+    <br>
+    <br>
+    <div class="box inline">inline</div>
+    <div class="box inline">inline</div>
+    <div class="box inline">inline</div>
+</body>
+</html>

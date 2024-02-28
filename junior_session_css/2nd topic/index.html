@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .parent p{
+            color: rgb(108, 215, 215);
+        }
+    .parent > p 
+        {
+            background-color: aqua;
+        }
+    .parent > .directchild > p
+    {
+        background-color: blueviolet;
+    }
+    h2~p
+    {
+        color: brown;
+    }
+    h2 + p
+    {
+        background-color: rgb(237, 29, 216);
+        color: blue;
+    }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="directchild">
+        <p class="child">b</p>
+        <p class="child">c</p>
+        <p class="child">d</p>
+        <p class="child">e</p>
+        </div>
+       <p class="directchild">f</p>
+    </div>
+    <div class="class1 class2">
+        <h2>First element</h2>
+        <p>i am direct sibling of h2</p>
+        <p>I am also a sibling of h2</p>
+        <p>I am also a sibling of h2</p>
+        <p>I am also a sibling of h2</p>
+    </div>
+</body>
+</html>
